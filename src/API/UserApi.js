@@ -24,18 +24,18 @@ const UserApi = {
             data: user
         })
     },
-    updateUser: async () =>{
+    updateUser: async (user,id) =>{
         return axiosIns.request({
             url: `/api/user/update/${id}`,
             method: "PATCH",
             data: user
         })
     },
-    deleteUser: async () =>{
+    deleteUser: async (id) =>{
         return axiosIns.request({
             url: `/api/user/delete/${id}`,
-            method: "DELETE",
-            data: user
+            method: "DELETE"
+            
         })
     }
    
